@@ -71,7 +71,7 @@ const Hero = ({ isDarkMode }: HeroProps) => {
 
           <div className="flex justify-center space-x-6 mb-12 transform transition-all duration-1000 delay-700">
             <a
-              href="https://github.com"
+              href="https://github.com/salindhakal"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-3 rounded-full transition-all duration-300 hover:scale-110 hover:rotate-12 ${
@@ -83,7 +83,7 @@ const Hero = ({ isDarkMode }: HeroProps) => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/salin-dhakal-38912b2ba/"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-3 rounded-full transition-all duration-300 hover:scale-110 hover:rotate-12 ${
@@ -95,7 +95,7 @@ const Hero = ({ isDarkMode }: HeroProps) => {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@salindhakal7"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-3 rounded-full transition-all duration-300 hover:scale-110 hover:rotate-12 ${
@@ -107,7 +107,7 @@ const Hero = ({ isDarkMode }: HeroProps) => {
               <Youtube size={24} />
             </a>
             <a
-              href="mailto:salindhakal7@gmail.com"
+              href="mailto:contact@salindhakal.com.np"
               className={`p-3 rounded-full transition-all duration-300 hover:scale-110 hover:rotate-12 ${
                 isDarkMode
                   ? "text-emerald-400 hover:text-white hover:bg-emerald-800/50 hover:shadow-lg hover:shadow-emerald-500/25"
