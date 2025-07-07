@@ -1,5 +1,5 @@
-import React from 'react';
-import { ExternalLink, Github, Zap, Users, Target } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Github, Zap, Users, Target } from "lucide-react";
 
 interface ProjectsProps {
   isDarkMode: boolean;
@@ -9,50 +9,69 @@ const Projects = ({ isDarkMode }: ProjectsProps) => {
   const projects = [
     {
       title: "Football Player Rating Prediction System",
-      description: "Machine learning project featuring data scraping, model training, and ensemble prediction algorithms to accurately predict football player ratings based on performance metrics.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop",
-      technologies: ["Python", "Machine Learning", "Data Science", "Ensemble Methods"],
+      description:
+        "Machine learning project featuring data scraping, model training, and ensemble prediction algorithms to accurately predict football player ratings based on performance metrics.",
+      image: "https://i.imgur.com/V2MulPS.jpeg?w=800&h=500&fit=crop",
+      technologies: [
+        "Python",
+        "Machine Learning",
+        "Data Science",
+        "Ensemble Methods",
+      ],
       icon: <Target size={24} />,
-      githubUrl: "#",
-      demoUrl: "#"
+      githubUrl: "https://github.com/salindhakal/Rating-Prediction",
+      demoUrl: "#",
     },
     {
       title: "Job PeeK - Job Listing Platform",
-      description: "React-based CRUD job listing platform with advanced filtering, routing, and user-friendly interface. Features real-time job search and application management.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop",
+      description:
+        "React-based CRUD job listing platform with advanced filtering, routing, and user-friendly interface. Features real-time job search and application management.",
+      image: "https://i.imgur.com/i09ow8J.jpeg?w=800&h=500&fit=crop",
       technologies: ["React.js", "Node.js", "REST API", "MongoDB"],
       icon: <Zap size={24} />,
-      githubUrl: "#",
-      demoUrl: "#"
+      githubUrl: "https://github.com/salindhakal/Job-Peek",
+      demoUrl: "#",
     },
     {
       title: "CodeYatra Hackathon",
-      description: "Served as organizer and documentation lead for a national hackathon, coordinating events, managing documentation, and facilitating collaboration among participants.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=500&fit=crop",
-      technologies: ["Event Management", "Documentation", "Leadership", "Coordination"],
+      description:
+        "Served as organizer and documentation lead for a national hackathon, coordinating events, managing documentation, and facilitating collaboration among participants.",
+      image:
+        "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=500&fit=crop",
+      technologies: [
+        "Event Management",
+        "Documentation",
+        "Leadership",
+        "Coordination",
+      ],
       icon: <Users size={24} />,
       githubUrl: "#",
-      demoUrl: "#"
-    }
+      demoUrl: "#",
+    },
   ];
 
   return (
-    <section id="projects" className={`py-20 ${
-      isDarkMode ? 'bg-gray-800' : 'bg-white'
-    }`}>
+    <section
+      id="projects"
+      className={`py-20 ${isDarkMode ? "bg-gray-800" : "bg-white"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
-          }`}>
+          <h2
+            className={`text-4xl md:text-5xl font-bold mb-6 ${
+              isDarkMode ? "text-white" : "text-gray-900"
+            }`}
+          >
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-600 mx-auto rounded-full"></div>
-          <p className={`mt-6 text-lg max-w-3xl mx-auto ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-600'
-          }`}>
-            Here are some of my recent projects that showcase my skills in web development, 
-            machine learning, and project management.
+          <p
+            className={`mt-6 text-lg max-w-3xl mx-auto ${
+              isDarkMode ? "text-gray-300" : "text-gray-600"
+            }`}
+          >
+            Here are some of my recent projects that showcase my skills in web
+            development, machine learning, and project management.
           </p>
         </div>
 
@@ -61,9 +80,7 @@ const Projects = ({ isDarkMode }: ProjectsProps) => {
             <div
               key={index}
               className={`group rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
-                isDarkMode
-                  ? 'bg-gray-700 shadow-lg'
-                  : 'bg-gray-50 shadow-md'
+                isDarkMode ? "bg-gray-700 shadow-lg" : "bg-gray-50 shadow-md"
               }`}
             >
               <div className="relative overflow-hidden">
@@ -79,15 +96,19 @@ const Projects = ({ isDarkMode }: ProjectsProps) => {
               </div>
 
               <div className="p-6">
-                <h3 className={`text-xl font-bold mb-3 ${
-                  isDarkMode ? 'text-white' : 'text-gray-900'
-                }`}>
+                <h3
+                  className={`text-xl font-bold mb-3 ${
+                    isDarkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   {project.title}
                 </h3>
-                
-                <p className={`text-sm mb-4 leading-relaxed ${
-                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                }`}>
+
+                <p
+                  className={`text-sm mb-4 leading-relaxed ${
+                    isDarkMode ? "text-gray-300" : "text-gray-600"
+                  }`}
+                >
                   {project.description}
                 </p>
 
@@ -97,8 +118,8 @@ const Projects = ({ isDarkMode }: ProjectsProps) => {
                       key={techIndex}
                       className={`px-3 py-1 text-xs font-medium rounded-full ${
                         isDarkMode
-                          ? 'bg-gray-600 text-gray-300'
-                          : 'bg-gray-200 text-gray-700'
+                          ? "bg-gray-600 text-gray-300"
+                          : "bg-gray-200 text-gray-700"
                       }`}
                     >
                       {tech}
@@ -111,8 +132,8 @@ const Projects = ({ isDarkMode }: ProjectsProps) => {
                     href={project.githubUrl}
                     className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                       isDarkMode
-                        ? 'text-gray-300 hover:text-white hover:bg-gray-600'
-                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
+                        ? "text-gray-300 hover:text-white hover:bg-gray-600"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
                     }`}
                   >
                     <Github size={16} />
